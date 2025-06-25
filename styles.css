@@ -1,11 +1,12 @@
 :root {
     /* Variables de colores personalizadas para facilitar el mantenimiento del diseño */
-    --rosa: #ff6b9c;
-    --morado: #9c6bff;
-    --amarillo: #ffcc5e;
-    --blanco: #ffffff;
-    --negro: #333333;
+    --rosa: #ff6b9c;     /* Un rosa vibrante, como rosa chicle o fucsia suave */
+    --morado: #9c6bff;   /* Un morado claro, con un tono ligeramente pastel */
+    --amarillo: #ffcc5e; /* Amarillo dorado, parecido al color miel o mostaza clara */
+    --blanco: #ffffff;   /* Blanco puro */
+    --negro: #333333;    /* Gris muy oscuro, casi negro (ideal para texto en vez de #000) */
 }
+
 
 * {
     /* Elimina el margen y padding por defecto en todos los elementos */

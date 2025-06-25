@@ -1,0 +1,196 @@
+:root {
+    /* Variables de colores personalizadas para facilitar el mantenimiento del diseño */
+    --rosa: #ff6b9c;
+    --morado: #9c6bff;
+    --amarillo: #ffcc5e;
+    --blanco: #ffffff;
+    --negro: #333333;
+}
+
+* {
+    /* Elimina el margen y padding por defecto en todos los elementos */
+    margin: 0;
+    padding: 0;
+
+    /* Incluye el padding y borde dentro del tamaño total del elemento */
+    box-sizing: border-box;
+}
+
+body {
+    /* Fuente principal del sitio */
+    font-family: Arial, sans-serif;
+
+    /* Altura de línea para mejor legibilidad */
+    line-height: 1.5;
+
+    /* Color de fondo general del sitio */
+    background-color: #f9f9f9;
+}
+
+.header {
+    /* Fondo rosado para la cabecera */
+    background-color: var(--rosa);
+
+    /* Texto blanco en la cabecera */
+    color: var(--blanco);
+
+    /* Espaciado interno */
+    padding: 15px;
+
+    /* Alineación centrada del contenido */
+    text-align: center;
+}
+
+.header__logo {
+    /* Tamaño grande del texto del logo */
+    font-size: 24px;
+
+    /* Margen inferior para separar del menú */
+    margin-bottom: 10px;
+}
+
+.header__logo--highlight {
+    /* Resalta una parte del logo con color amarillo */
+    color: var(--amarillo);
+}
+
+.header__nav {
+    /* Margen superior para separar el menú del logo */
+    margin-top: 10px;
+}
+
+.header__nav-link {
+    /* Color blanco para los enlaces del menú */
+    color: var(--blanco);
+
+    /* Quita subrayado de los enlaces */
+    text-decoration: none;
+
+    /* Margen horizontal entre enlaces */
+    margin: 0 10px;
+
+    /* Hace que los enlaces se comporten como elementos en línea */
+    display: inline-block;
+}
+
+.banner {
+    /* Fondo morado para destacar la sección */
+    background-color: var(--morado);
+
+    /* Texto blanco sobre el banner */
+    color: var(--blanco);
+
+    /* Centra el texto */
+    text-align: center;
+
+    /* Espaciado vertical amplio */
+    padding: 30px 0;
+
+    /* Margen inferior para separar del contenido siguiente */
+    margin-bottom: 20px;
+}
+
+.banner__title {
+    /* Espaciado inferior entre el título y el texto */
+    margin-bottom: 5px;
+}
+
+.banner__text {
+    /* Elimina cualquier margen del párrafo */
+    margin: 0;
+}
+
+.products {
+    /* Centra el contenido de la sección de productos */
+    text-align: center;
+
+    /* Espaciado interior */
+    padding: 20px;
+}
+
+.products__title {
+    /* Color rosa para el título de la sección */
+    color: var(--rosa);
+
+    /* Espaciado inferior */
+    margin-bottom: 20px;
+}
+
+.products__item {
+    /* Fondo blanco para cada tarjeta de producto */
+    background-color: var(--blanco);
+
+    /* Borde gris claro */
+    border: 1px solid #ddd;
+
+    /* Bordes redondeados */
+    border-radius: 8px;
+
+    /* Espaciado interno */
+    padding: 15px;
+
+    /* Margen para separar productos */
+    margin: 10px auto;
+
+    /* Máximo ancho para mantener tamaño uniforme */
+    max-width: 200px;
+
+    /* Los productos se alinean horizontalmente en pantallas grandes */
+    display: inline-block;
+
+    /* Alineación vertical en la misma línea */
+    vertical-align: top;
+}
+
+.products__image {
+    /* Imagen ocupa todo el ancho disponible */
+    max-width: 100%;
+
+    /* Bordes redondeados para estética */
+    border-radius: 5px;
+
+    /* Espaciado inferior respecto al contenido siguiente */
+    margin-bottom: 10px;
+}
+
+.products__price {
+    /* Color morado llamativo para el precio */
+    color: var(--morado);
+
+    /* Negrita */
+    font-weight: bold;
+
+    /* Espaciado vertical */
+    margin: 10px 0;
+}
+
+.products__btn {
+    /* Fondo amarillo para llamar la atención */
+    background-color: var(--amarillo);
+
+    /* Color del texto (negro para buena lectura) */
+    color: var(--negro);
+
+    /* Elimina borde */
+    border: none;
+
+    /* Espaciado interno del botón */
+    padding: 8px 15px;
+
+    /* Bordes redondeados estilo "píldora" */
+    border-radius: 15px;
+
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 500px) {
+    .products__item {
+        /* En pantallas pequeñas, los productos se apilan uno debajo del otro */
+        display: block;
+
+        /* Margen automático para centrar en bloque */
+        margin: 10px auto;
+    }
+}

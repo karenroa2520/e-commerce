@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el diseño sea responsive, adaptándose al tamaño de pantalla del dispositivo -->
+
+    <title>Maquillaje Brillante</title>
+    <!-- Título que se muestra en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vincula una hoja de estilos externa (CSS) para dar estilo al contenido HTML -->
+</head>
+
+<body>
+    <!-- Cuerpo del documento donde se estructura todo el contenido visible -->
+
+    <header class="header">
+        <!-- Encabezado principal del sitio, contiene el logo y menú de navegación -->
+
+        <h1 class="header__logo">
+            Maquillaje 
+            <span class="header__logo--highlight">Brillante</span>
+        </h1>
+        <!-- Logo de la tienda con parte del texto resaltado con una clase especial -->
+
+        <nav class="header__nav">
+            <!-- Menú de navegación principal -->
+            <a href="#" class="header__nav-link">Inicio</a>
+            <a href="#" class="header__nav-link">Productos</a>
+            <a href="#" class="header__nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <!-- Sección destacada o "banner" con una promoción llamativa -->
+        <h2 class="banner__title">¡Ofertas Especiales!</h2>
+        <p class="banner__text">Labiales desde $9.999</p>
+    </section>
+
+    <section class="products">
+        <!-- Sección que muestra los productos disponibles -->
+        <h2 class="products__title">Nuestros Productos</h2>
+
+        <!-- Producto 1 -->
+        <div class="products__item">
+            <img src="img/labial.jpg" alt="Labial rosa" class="products__image">
+            <!-- Imagen del producto con descripción alternativa para accesibilidad -->
+
+            <h3 class="products__name">Labial Matte</h3>
+            <!-- Nombre del producto -->
+
+            <p class="products__price">$12.999</p>
+            <!-- Precio del producto -->
+
+            <button class="products__btn">Comprar</button>
+            <!-- Botón de acción para comprar el producto -->
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="products__item">
+            <img src="img/sombras.jpg" alt="Sombras" class="products__image">
+            <h3 class="products__name">Paleta Sombras</h3>
+            <p class="products__price">$19.999</p>
+            <button class="products__btn">Comprar</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="products__item">
+            <img src="img/pestañina.jpg" alt="Máscara" class="products__image">
+            <h3 class="products__name">Máscara Pestañas</h3>
+            <p class="products__price">$14.999</p>
+            <button class="products__btn">Comprar</button>
+        </div>
+    </section>
+
+</body>
+</html>
